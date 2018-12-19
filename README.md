@@ -49,3 +49,8 @@ Yes. Change `tHeight` parameter inside the script.
 ## Contributors
 
 [Here](https://github.com/alogic0/ChristBASHTree/graphs/contributors)
+
+## Notes
+
+http://subinsb.com/bash-animated-christmas-tree/
+
