@@ -46,6 +46,23 @@ Custom, based on Atom's "One Dark" theme.
 
 Yes. Change `tHeight` parameter inside the script.
 
+## How to create animated screenshot?
+
+1. Start grabbing the screen
+   ```
+   ffmpeg -video_size 800x568 -framerate 25 -f x11grab -i :0.0+300,75 output.mp4
+   ```
+2. Run `christmas.sh`. Stop grabbing the screen, by hitting `Ctrl+c`, when you ready.
+3. Determine start and stop point where to cut video (using `ffplay`), then cut.
+   ```
+   ffmpeg -i output.mp4 -ss 00:00:12.20 -to 00:00:53.0 -c copy screen.mp4
+   ```
+4. Create _.gif_ file   
+   ```
+   ffmpeg -y -i screen.mp4 -vf fps=10,scale=800:-1:flags=lanczos,palettegen palette.png
+   ffmpeg -i screen2.mp4 -i palette.png -filter_complex "fps=10,scale=800:-1:flags=lanczos[x];[x][1:v]paletteuse" screen.gif
+   ```
+
 ## Contributors
 
 [Here](https://github.com/alogic0/ChristBASHTree/graphs/contributors)
