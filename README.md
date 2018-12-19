@@ -18,6 +18,12 @@ Git clone and execute:
 git clone https://github.com/alogic0/ChristBASHTree.git && cd ./ChristBASHTree && bash christmas.sh
 ```
 
+Docker:
+```
+docker pull alogic0/christbashtree:latest
+docker run -it alogic0/christbashtree:latest
+```
+
 __Enjoy!__
 
 # FAQ
