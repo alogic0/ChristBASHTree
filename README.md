@@ -2,46 +2,29 @@
 
 You know, a Christmas tree on Bash :)
 
+Cloned from the [sergiolepore repository](https://github.com/sergiolepore/ChristBASHTree)
+
 ![Screenshot](./screenshot.png?raw=true)
 
 # Usage
 
-Via cURL:
-
 ```
-# English version
-curl https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-EN.sh | bash
-
-# Spanish version
-curl https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-ES.sh | bash
+wget https://raw.githubusercontent.com/alogic0/ChristBASHTree/master/christmas.sh
+bash christmas.sh
 ```
-
-Via Wget:
-
-```
-# English version
-wget -qO- https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-EN.sh | bash
-
-# Spanish version
-wget -qO- https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-ES.sh | bash
-```
-
-Docker:
-
-```
-docker pull sergiolepore/christbashtree:latest
-docker run -it sergiolepore/christbashtree:latest
-```
-
 Git clone and execute:
 
 ```
-git clone https://github.com/sergiolepore/ChristBASHTree.git && cd ./ChristBASHTree && bash tree-EN.sh
+git clone https://github.com/alogic0/ChristBASHTree.git && cd ./ChristBASHTree && bash christmas.sh
 ```
 
 __Enjoy!__
 
 # FAQ
+
+## How can I stop it?
+
+Strike `Ctrl+c`.
 
 ## License?
 
@@ -53,16 +36,16 @@ Only GNU/Linux and Unix flavors.
 
 ## What OS are you using?
 
-Ubuntu 17.10.
-
-## What about your terminal emulator?
-
-[Tilix](https://gnunn1.github.io/tilix-web/)
+Ubuntu 
 
 ## And your color palette?
 
 Custom, based on Atom's "One Dark" theme.
 
+## Can I make it larger/shorter?
+
+Yes. Change `tHeigt` parameter inside the script.
+
 ## Contributors
 
-[Here](https://github.com/sergiolepore/ChristBASHTree/graphs/contributors)
+[Here](https://github.com/alogic0/ChristBASHTree/graphs/contributors)

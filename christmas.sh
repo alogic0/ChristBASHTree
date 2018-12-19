@@ -2,6 +2,7 @@
 trap "tput reset; tput cnorm; exit" 2
 clear
 tput civis
+tHeight=44
 lin=2
 col=$(($(tput cols) / 2))
 c=$((col-1))
@@ -10,7 +11,7 @@ color=0
 tput setaf 2; tput bold
 
 # Tree
-for ((i=1; i<20; i+=2))
+for ((i=1; i<$((tHeight-4)); i+=2))
 {
     tput cup $lin $col
     for ((j=1; j<=i; j++))
@@ -32,14 +33,14 @@ for ((i=1; i<=2; i++))
 new_year=$(date +'%Y')
 let new_year++
 tput setaf 1; tput bold
-tput cup $lin $((c - 6)); echo FELICES FIESTAS
-tput cup $((lin + 1)) $((c - 9)); echo Y mucho CODIGO en $new_year
+tput cup $lin $((c - 6)); echo MERRY CHRISTMAS
+tput cup $((lin + 1)) $((c - 10)); echo And lots of CODE in $new_year
 let c++
 k=1
 
 # Lights and decorations
 while true; do
-    for ((i=1; i<=35; i++)) {
+    for ((i=1; i<=$tHeight; i++)) {
         # Turn off the lights
         [ $k -gt 1 ] && {
             tput setaf 2; tput bold
@@ -47,7 +48,7 @@ while true; do
             unset line[$[k-1]$i]; unset column[$[k-1]$i]  # Array cleanup
         }
 
-        li=$((RANDOM % 9 + 3))
+        li=$((RANDOM % (tHeight/2 - 3) + 3))
         start=$((c-li+2))
         co=$((RANDOM % (li-2) * 2 + 1 + start))
         tput setaf $color; tput bold   # Switch colors
@@ -58,9 +59,9 @@ while true; do
         color=$(((color+1)%8))
         # Flashing text
         sh=1
-        for l in C O D I G O
+        for l in C O D E
         do
-            tput cup $((lin+1)) $((c-3+sh))
+            tput cup $((lin+1)) $((c+sh))
             echo $l
             let sh++
             sleep 0.01
