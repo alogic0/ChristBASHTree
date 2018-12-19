@@ -44,7 +44,7 @@ Custom, based on Atom's "One Dark" theme.
 
 ## Can I make it larger/shorter?
 
-Yes. Change `tHeigt` parameter inside the script.
+Yes. Change `tHeight` parameter inside the script.
 
 ## Contributors
 
