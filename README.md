@@ -4,7 +4,7 @@ You know, a Christmas tree on Bash :)
 
 Cloned from the [sergiolepore repository](https://github.com/sergiolepore/ChristBASHTree)
 
-![Screenshot](./screenshot.png?raw=true)
+![Screenshot](./screen.gif?raw=true)
 
 # Usage
 
