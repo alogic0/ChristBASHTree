@@ -30,8 +30,7 @@ for ((i=1; i<=2; i++))
     tput cup $((lin++)) $c
     echo 'mWm'
 }
-new_year=$(date +'%Y')
-let new_year++
+new_year=$(date -d '+2 months' +'%Y')
 tput setaf 1; tput bold
 tput cup $lin $((c - 6)); echo MERRY CHRISTMAS
 tput cup $((lin + 1)) $((c - 10)); echo And lots of CODE in $new_year
