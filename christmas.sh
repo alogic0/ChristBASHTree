@@ -2,7 +2,7 @@
 trap "tput reset; tput cnorm; exit" 2
 clear
 tput civis
-tHeight=44
+tHeight=54
 lin=2
 col=$(($(tput cols) / 2))
 c=$((col-1))
