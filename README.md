@@ -38,7 +38,7 @@ Strike `Ctrl+c`.
 
 ## Will it run under _whatever-OS_?
 
-It works on GNU/Linux and Unix flavors. Own Windows you can run it  
+It works on GNU/Linux and Unix flavors. On Windows you can run it  
 inside [MSYS2](https://www.msys2.org/) terminal. 
 
 ## What OS are you using?
